@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal portfolio of Nur Abyatul Adawiah — Computer Science (Multimedia) student at UNIMAS." />
+    <title>Nur Abyatul Adawiah | Personal Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+    <!-- Skip link for keyboard users -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- Scroll progress bar -->
+    <div id="progressBar" role="progressbar" aria-label="Page scroll progress"></div>
+
+    <!-- ============ HEADER ============ -->
+    <header class="site-header">
+        <p class="logo">♡ Nur Abyatul Adawiah ♡</p>
+
+        <button class="nav-toggle" id="navToggle"
+                aria-expanded="false" aria-controls="navMenu"
+                aria-label="Toggle navigation menu">
+            ☰
+        </button>
+
+        <nav aria-label="Main navigation">
+            <ul id="navMenu" class="nav-menu">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <button id="themeToggle" class="button"
+                            aria-pressed="false" aria-label="Toggle dark mode">
+                        🌙 Dark Mode
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+
+        <!-- ============ HERO ============ -->
+        <section class="hero" aria-labelledby="heroTitle">
+            <h1 id="heroTitle">Hello, I'm Nur Abyatul! ♡</h1>
+            <p>
+                Welcome to my personal portfolio! I am a Computer Science
+                (Multimedia) student who enjoys learning about technology,
+                creativity and digital design. This website introduces
+                who I am and what I can do.
+            </p>
+            <p id="clock"></p>
+        </section>
+
+        <!-- ============ ABOUT ============ -->
+        <section id="about">
+            <h2>♡ About Me</h2>
+            <div class="card">
+                <p>
+                    Hi! My name is <strong>Nur Abyatul Adawiah binti Hasan</strong>.
+                    I am currently pursuing a Bachelor of Computer Science
+                    (Multimedia) with Honours at Universiti Malaysia Sarawak
+                    (UNIMAS).
+                </p>
+                <p>
+                    I am interested in multimedia, web development, digital
+                    creativity and learning new technologies. I believe that
+                    every new skill is an opportunity to improve myself.
+                </p>
+                <p>
+                    I created this portfolio to showcase my learning journey,
+                    academic projects, skills and personal growth as a
+                    university student.
+                </p>
+            </div>
+        </section>
+
+        <!-- ============ SKILLS ============ -->
+        <section id="skills">
+            <h2>♡ My Skills</h2>
+
+            <div class="card">
+                <h3>Technical Skills</h3>
+                <div>
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Java Programming</span>
+                    <span class="tag">C++</span>
+                    <span class="tag">Web Design</span>
+                </div>
+                <p>
+                    These are technologies I am learning or exploring
+                    through my coursework. I aim to improve my skills
+                    through practice and projects.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Personal Skills</h3>
+                <div>
+                    <span class="tag">Teamwork</span>
+                    <span class="tag">Communication</span>
+                    <span class="tag">Creativity</span>
+                    <span class="tag">Problem Solving</span>
+                    <span class="tag">Willingness to Learn</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ PROJECTS ============ -->
+        <section id="projects">
+            <h2>♡ My Projects</h2>
+
+            <!-- Filter buttons -->
+            <div class="filters" role="group" aria-label="Filter projects">
+                <button class="filter-btn is-active" data-filter="all" type="button">All</button>
+                <button class="filter-btn" data-filter="web" type="button">Web & DB</button>
+                <button class="filter-btn" data-filter="software" type="button">Software</button>
+                <button class="filter-btn" data-filter="design" type="button">Design</button>
+            </div>
+
+            <div class="grid">
+                <article class="card project" data-tags="web">
+                    <h3>01. Personal Portfolio Website</h3>
+                    <p>
+                        A personal website created using HTML, CSS and
+                        JavaScript to introduce myself and present my
+                        skills, education and projects.
+                    </p>
+                    <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                    
+                </article>
+
+                <article class="card project" data-tags="software">
+                    <h3>02. Interactive Java Quiz System</h3>
+                    <p>
+                        A comprehensive desktop quiz application built with Java. 
+                        This project features a complete Graphical User Interface (GUI), 
+                        dynamic question handling, and gamification elements. It also 
+                        includes a reward system and a file storage manager to track 
+                        user scores and progress.
+                    </p>
+                    <p><strong>Technologies:</strong> Java, Object-Oriented Programming (OOP), GUI</p>
+                </article>
+
+                <article class="card project" data-tags="web">
+                    <h3>03. Sarawak Heritage Online Auction (SHAA) Database System</h3>
+                    <p>
+                        A robust web-based database system designed for an online auction platform. 
+                        The project features a fully normalized relational database (up to 3NF) with a 
+                        Crow's Foot ERD. It includes advanced SQL triggers, user authentication, 
+                        dynamic bidding history, and automated payment and delivery tracking.
+                    </p>
+                    <p><strong>Technologies:</strong>HTML, PHP, MySQL (phpMyAdmin), XAMPP</p>
+                </article>
+
+                <article class="card project" data-tags="design">
+                    <h3>04. KUTS ART Mobile App UI/UX Design</h3>
+                    <p>
+                        A high-fidelity mobile application prototype designed for the 
+                        Kuching Urban Transportation System (KUTS) Autonomous Rapid Transit (ART). 
+                        The design focuses on an interactive map module featuring station 
+                        routing, place-of-interest filtering, and an intelligent search system. 
+                        It also incorporates accessibility features for visually impaired users 
+                        and a seamless ticket booking flow, validated through System Usability 
+                        Scale (SUS) testing.
+                    </p>
+                    <p><strong>Technologies:</strong> Figma, UI/UX Design, Prototyping, Usability Testing</p>
+                </article>
+
+                <article class="card project" data-tags="software">
+                    <h3>05. Trash Collector:OpenGL Game</h3>
+                    <p>
+                        An interactive environmental conservation game developed using C++ 
+                        and the OpenGL library. Inspired by classic 70s-90s arcade games, 
+                        it features custom polygon rendering, character animations with 
+                        joint limitations, and a two-level scoring system. The game 
+                        challenges players to collect trash to progress, promoting 
+                        environmental awareness through an engaging, custom-built UI.
+                    </p>
+                    <p><strong>Technologies:</strong> C++, OpenGL, Computer Graphics, VS Code</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ============ EDUCATION ============ -->
+        <section id="education">
+            <h2>♡ Education</h2>
+            
+            <div class="card" style="max-width: 800px; margin: 0 auto;">
+                <h3>Universiti Malaysia Sarawak (UNIMAS)</h3>
+                <ul style="padding-left: 20px; margin-top: 10px; line-height: 1.8;">
+                    <li><strong>Degree:</strong> Bachelor of Computer Science (Multimedia) with Honours</li>
+                    <li><strong>Duration:</strong> 2024 - Present</li>
+                    <li><strong>Location:</strong> Kota Samarahan, Sarawak</li>
+                    <li><strong>Focus:</strong> Software development, multimedia technologies, and web development.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============ CONTACT ============ -->
+        <section id="contact" class="contact">
+            <h2>♡ Contact Me</h2>
+
+            <div class="card">
+                <p>
+                    Thank you for visiting my portfolio! I am always
+                    happy to learn, collaborate and explore new ideas.
+                </p>
+
+                <p>
+                    Email:
+                    <a href="mailto:nurabyatuladawiahhasan@gmail.com" id="emailLink">
+                        nurabyatuladawiahhasan@gmail.com
+                    </a>
+                    <button class="button" id="copyEmail" type="button">Copy</button>
+                </p>
+
+                <p>
+                    GitHub:
+                    <a href="https://github.com/nurabyatuladawiah"
+                       target="_blank" rel="noopener noreferrer">
+                        Visit My GitHub
+                    </a>
+                </p>
+
+                <!-- Contact form (front-end only) -->
+                <form id="contactForm" class="contact-form" novalidate>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required aria-describedby="nameError" />
+                    <span class="error" id="nameError" role="alert"></span>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required aria-describedby="emailError" />
+                    <span class="error" id="emailError" role="alert"></span>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required aria-describedby="msgError"></textarea>
+                    <span class="error" id="msgError" role="alert"></span>
+
+                    <button type="submit" class="button">Send Message</button>
+                    <p id="formStatus" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer>
+        <p>Made with ♡ by Nur Abyatul Adawiah</p>
+        <p>&copy; <span id="year"></span> Nur Abyatul Adawiah. All rights reserved.</p>
+        <button class="button" id="backToTop" type="button">Back to Top ↑</button>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
