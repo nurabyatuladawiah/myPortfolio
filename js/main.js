@@ -1,10 +1,5 @@
 'use strict';
 
-/* =========================================================
-   Portfolio JavaScript — Nur Abyatul Adawiah
-   Each feature is its own function for readability.
-   ========================================================= */
-
 /* ---------- 1. Mobile nav toggle ---------- */
 function initNavToggle() {
     const btn = document.getElementById('navToggle');
@@ -220,8 +215,8 @@ function initContactForm() {
         const status = document.getElementById('formStatus');
         if (status) {
             status.textContent = valid
-                ? '✅ Thanks! Your message has been validated (front-end demo).'
-                : '⚠️ Please fix the errors above.';
+                ? 'Thanks! Your message has been received.'
+                : 'Please fix the errors above.';
         }
         if (valid) form.reset();
     });
