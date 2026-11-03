@@ -1,6 +1,6 @@
 'use strict';
 
-/* ---------- 1. Mobile nav toggle ---------- */
+/* ---------- 1. Function to handle mobile menu click ---------- */
 function initNavToggle() {
     const btn = document.getElementById('navToggle');
     const menu = document.getElementById('navMenu');
@@ -63,7 +63,7 @@ function initClock() {
     setInterval(tick, 1000);
 }
 
-/* ---------- 4. Dynamic year in footer ---------- */
+/* ---------- 4. Auto update copyright year ---------- */
 function initYear() {
     const el = document.getElementById('year');
     if (el) el.textContent = new Date().getFullYear();
